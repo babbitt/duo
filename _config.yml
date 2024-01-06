@@ -23,31 +23,32 @@ prose:
     - "postcss.config.js"
     - "tailwind.config.js"
   metadata:
-    - name: "layout"
-      field:
-        element: "hidden"
-        value: "default"
-    - name: "current_status"
-      field:
-        label: "Current Status"
-        element: "select"
-        options:
-          - "Coming soon"
-          - "In previews"
-          - "Currently playing"
-          - "Extended!"
-          - "Last production"
-          - ""
-    - name: "production"
-      field:
-        element: "text"
-        label: "Related Production"
-        placeholder: "Enter the title of the related production"
-    - name: "description"
-      field:
-        label: "Page Description"
-        element: "textarea"
-        help: "Enter a longform description for the page"
+    '':
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "current_status"
+        field:
+          label: "Current Status"
+          element: "select"
+          options:
+            - "Coming soon"
+            - "In previews"
+            - "Currently playing"
+            - "Extended!"
+            - "Last production"
+            - ""
+      - name: "production"
+        field:
+          element: "text"
+          label: "Related Production"
+          placeholder: "Enter the title of the related production"
+      - name: "description"
+        field:
+          label: "Page Description"
+          element: "textarea"
+          help: "Enter a longform description for the page"
     _work:
       - name: "layout"
         field:
