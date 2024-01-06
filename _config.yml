@@ -23,8 +23,7 @@ prose:
     - "postcss.config.js"
     - "tailwind.config.js"
   metadata:
-    metadata:
-      '/':
+    '/index.html':
       - name: "layout"
         field:
           element: "hidden"
