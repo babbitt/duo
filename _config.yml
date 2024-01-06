@@ -21,14 +21,14 @@ prose:
     - "tailwind.config.js"
   metadata:
     metadata:
-    index:
+    /index.html:
       - name: "layout"
         field:
           element: "hidden"
           value: "default"
       - name: "current_status"
-        label: "Current Status"
         field:
+          label: "Current Status"
           element: "select"
           options:
             - "Coming soon"
@@ -38,69 +38,68 @@ prose:
             - "Last production"
             - ""
       - name: "production"
-        label: "Related Production"
         field:
           element: "text"
-          size: "full"
+          label: "Related Production"
           placeholder: "Enter the title of the related production"
       - name: "description"
-        label: "Page Description"
         field:
+          label: "Page Description"
           element: "textarea"
-          size: "large"
-          placeholder: "Enter a longform description for the page"
+          help: "Enter a longform description for the page"
     _work:
       - name: "layout"
         field:
           element: "hidden"
           value: "work"
       - name: "title"
-        label: "Title"
         field:
+          label: "Title"
           element: "text"
-          size: "full"
       - name: "opening_night"
-        label: "Opening Night"
         field:
+          label: "Opening Night"
           element: "text"
-          size: "full"
+          help: "Enter date in YYYY-MM-DD format"
       - name: "closing_night"
-        label: "Closing Night"
         field:
+          label: "Closing Night"
           element: "text"
-          size: "full"
+          help: "Enter date in YYYY-MM-DD format"
       - name: "production_company"
-        label: "Production Company"
         field:
+          label: "Production Company"
           element: "text"
-          size: "full"
       - name: "primary_color"
-        label: "Primary Color"
         field:
+          label: "Primary Color"
+          help: "Hex code for a primary color for the work"
+          placeholder: "#000000"
           element: "text"
-          size: "full"
       - name: "secondary_color"
-        label: "Secondary Color"
         field:
+          label: "Secondary Color"
+          help: "Hex code for a secondary color for the work"
+          placeholder: "#FFFFFF"
           element: "text"
-          size: "full"
       - name: "poster_image"
-        label: "Poster Image"
         field:
-          element: "file"
-          size: "full"
+          label: "Poster Image"
+          help: "A path to the poster for the work."
+          placeholder: "/assets/img/xxxx.jpg"
+          element: "text"
       - name: "site"
-        label: "Website URL"
         field:
+          label: "Website URL"
+          help: "A website to learn more (optional)"
           element: "text"
-          size: "full"
       - name: "tickets"
-        label: "Tickets URL"
         field:
+          label: "Tickets URL"
+          help: "A website to get tickets (optional)"
           element: "text"
-          size: "full"
-      - name: "shown"
-        label: "Is Shown"
+      - name: "hide"
         field:
+          label: "Hide on 'Productions' tab"
           element: "checkbox"
           size: "small"
