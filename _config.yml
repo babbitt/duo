@@ -24,7 +24,7 @@ prose:
     - "tailwind.config.js"
   metadata:
     metadata:
-      '':
+      '/':
       - name: "layout"
         field:
           element: "hidden"
