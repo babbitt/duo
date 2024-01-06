@@ -26,10 +26,16 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
       # Install PostCSS plugins (from your package.json)
       - run: npm install
       - name: Build site
+      # use jekyll-action-ts to build
+      # https://github.com/limjh16/jekyll-action-ts
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
+      - name: Re-build site (sanity)
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
         uses: limjh16/jekyll-action-ts@v2
