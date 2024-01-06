@@ -1,0 +1,75 @@
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: .25
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .25
+}
+
+blockquote {
+    background-color: black;
+    color: white;
+    padding: .75rem 1rem;
+    border-radius: 3px;
+    width: fit-content;
+    display: flex
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: auto;
+}
+
+.story a {
+    background-color: #e6e6e6;
+    padding: 0 .25rem;
+    border-radius: 3px;
+}
+
+img {
+    max-width: 80vw;
+    max-height: 50vh;
+}
+
+img[src*='#left'] {
+    float: left;
+}
+
+img[src*='#right'] {
+    float: right;
+}
+
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
+
+.story {
+    padding: 0 1rem;
+}
+
+.story hr {
+    margin: 1rem 0;
+    border: black solid 5px;
+}
+
+.story p {
+    font-size: 1.15rem;
+}
