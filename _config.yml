@@ -38,7 +38,7 @@ prose:
             - "Currently playing"
             - "Extended!"
             - "Last production"
-            - ""
+            - " "
       - name: "production"
         field:
           element: "text"
