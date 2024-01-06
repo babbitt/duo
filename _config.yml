@@ -5,9 +5,20 @@ collections:
   work:
     output: true
 prose:
-  siteurl: "http://joebabbitt.com/duo"
-  media: "static/media"
-  ignore: ["works.html", "_layouts", "_includes"]
+  siteurl: 'http://joebabbitt.com/duo'
+  media: 'static/media'
+  ignore:
+    - "works.html"
+    - "_config.yml"
+    - "/_layouts"
+    - "/_includes"
+    - "/.github"
+    - ".gitignore"
+    - "Gemfile"
+    - "package.json"
+    - "package-lock.json"
+    - "postcss.config.js"
+    - "tailwind.config.js"
   metadata:
     metadata:
     index:
