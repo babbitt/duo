@@ -1,6 +1,9 @@
+title: "Duo Multicultural Arts Center"
+tagline: "DMAC is a multicultural arts center for independent artists in the heart of the East Village."
 baseurl: /duo
 plugins:
   - jekyll-postcss-v2
+  - jekyll-seo-tag
 collections:
   work:
     output: true
@@ -82,7 +85,7 @@ prose:
           help: "Hex code for a secondary color for the work"
           placeholder: "#FFFFFF"
           element: "text"
-      - name: "poster_image"
+      - name: "image"
         field:
           label: "Poster Image"
           help: "A path to the poster for the work."
