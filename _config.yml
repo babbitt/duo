@@ -1,0 +1,99 @@
+baseurl: /duo
+plugins:
+  - jekyll-postcss-v2
+collections:
+  work:
+    output: true
+prose:
+  siteurl: 'http://joebabbitt.com/duo'
+  media: 'static/media'
+  ignore: [
+    "works.html",
+    "_layouts",
+    "_includes",
+  ]
+  metadata:
+    metadata:
+    index:
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'default'
+      - name: 'current_status'
+        label: 'Current Status'
+        field:
+          element: 'select'
+          options:
+            - 'Coming soon'
+            - 'In previews'
+            - 'Currently playing'
+            - 'Extended!'
+            - 'Last production'
+            - ''
+      - name: 'production'
+        label: 'Related Production'
+        field:
+          element: 'text'
+          size: 'full'
+          placeholder: 'Enter the title of the related production'
+      - name: 'description'
+        label: 'Page Description'
+        field:
+          element: 'textarea'
+          size: 'large'
+          placeholder: 'Enter a longform description for the page'
+    _work:
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'work'
+      - name: 'title'
+        label: 'Title'
+        field:
+          element: 'text'
+          size: 'full'
+      - name: 'opening_night'
+        label: 'Opening Night'
+        field:
+          element: 'text'
+          size: 'full'
+      - name: 'closing_night'
+        label: 'Closing Night'
+        field:
+          element: 'text'
+          size: 'full'
+      - name: 'production_company'
+        label: 'Production Company'
+        field:
+          element: 'text'
+          size: 'full'
+      - name: 'primary_color'
+        label: 'Primary Color'
+        field:
+          element: 'color'
+          size: 'full'
+      - name: 'secondary_color'
+        label: 'Secondary Color'
+        field:
+          element: 'color'
+          size: 'full'
+      - name: 'poster_image'
+        label: 'Poster Image'
+        field:
+          element: 'file'
+          size: 'full'
+      - name: 'site'
+        label: 'Website URL'
+        field:
+          element: 'text'
+          size: 'full'
+      - name: 'tickets'
+        label: 'Tickets URL'
+        field:
+          element: 'text'
+          size: 'full'
+      - name: 'shown'
+        label: 'Is Shown'
+        field:
+          element: 'checkbox'
+          size: 'small'

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% include buffer.html %}
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+	{% assign sorted_work = site.work | sort: 'opening_night' | reverse %}
+	{% for work in sorted_work %}
+	<a href="{{site.baseurl}}{{work.url}}"><div class="bg-gray-100 rounded-md group">
+			<div class="w-full aspect-[4/6] bg-cover bg-center bg-gray-200 rounded-md"
+				style="background-image: url('{{site.baseurl}}{{work.poster_image}}')"></div>
+			<div class="relative">
+				<div class="p-2">
+					<h2 class="text-lg font-semibold mb-2">{{ work.title }}</h2>
+					<p class="text-md text-gray-500 mb-2">{{ work.opening_night }}{% if work.closing_night %} - {{ work.closing_night }}{% endif %}</p>
+					<p class="text-md text-gray-500 mb-2">{{ work.production_company }}</p>
+				</div>
+				<div class="absolute right-0 bottom-0">
+					<div class="w-16 h-16 bg-gray-200 transition-all duration-250 group-hover:bg-[{{ work.primary_color | default: '#000000' }}] flex rounded-l-full">
+						<div class="w-10 h-10 bg-white transition-all duration-250 group-hover:bg-[{{ work.secondary_color | default: '#ffffff' }}] m-auto flex rounded-full">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="m-auto w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+							</svg>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div></a>
+		{% endfor %}
+</div>

@@ -1,0 +1,45 @@
+---
+layout: default
+current_status: "Coming soon"
+production: "Here we are"
+---
+{% include buffer.html %}
+
+<div class="flex flex-col lg:flex-row">
+	<div class="flex flex-col p-4">
+		<div class="text-6xl">
+			<p>
+			Duo
+			</p>
+			<p>
+			Multiculutral
+			</p>
+			<p>
+			Arts
+			</p>
+		</div>
+		<div class="flex space-x-8 max-w-prose">
+			<p> <span class="text-6xl">Center</span> is a Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eros lectus. Nulla pharetra dolor id dui tempus, ut tempor enim vestibulum. Vestibulum vestibulum nibh sit amet aliquam aliquet. Integer quam nulla, rutrum non mauris sed, vestibulum auctor ligula. Vivamus ullamcorper diam vitae cursus sollicitudin. Nulla volutpat nisl pulvinar, viverra felis vitae, feugiat sem. Nam commodo dolor eget ligula pretium gravida. Duis sit amet odio ac risus sollicitudin iaculis sit amet a arcu. Aenean ullamcorper eget ligula ut accumsan. Duis sit amet auctor ex.</p>
+		</div>
+	</div>
+	<div class="flex flex-col mx-auto my-10 lg:my-0 lg:ml-auto lg:mr-0">
+		<div class="relative">
+			<div class="group">
+				{% assign related_work = site.work | where: 'title', page.production | first %}
+				<div class="hidden lg:block pointer-events-none">
+					<div class="w-32 h-32 border-black border-2 duration-500 transition-all bg-black group-hover:bg-[{{related_work.primary_color | default: "#000000"}}] rounded-b-full absolute bottom-0 -left-36 opacity-30">
+					</div>
+					<div class="w-32 h-32 border-black border-2 duration-500 transition-all bg-black group-hover:bg-[{{related_work.secondary_color | default: "#FFFFFF"}}] rounded-full absolute bottom-0 -left-72 opacity-30">
+					</div>
+				</div>
+				<p class="text-2xl font-bold w-fit min-w-full lg:min-w-0 transition-all ml-auto mr-0 duration-500 group-hover:min-w-[100%] text-center">{{page.current_status}}</p>
+				<a href="{{site.baseurl}}{{related_work.url}}">
+				<div class="border-black border-2 lg:rounded-l-[100%] transition-all bg-cover bg-center duration-500 lg:group-hover:rounded-md bg-[#B2B2B2] aspect-[4/6] w-80"
+					style="background-image: url('{{site.baseurl}}{{related_work.poster_image}}')">
+				</div>
+				</a>
+				<p class="text-2xl w-fit min-w-full lg:min-w-0 transition-all ml-auto mr-0 duration-500 group-hover:min-w-[100%] text-center max-w-80 text-ellipsis overflow-hidden whitespace-nowrap">{{related_work.title}}</p>
+			</div>
+		</div>
+	</div>
+</div>
