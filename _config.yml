@@ -16,7 +16,7 @@ prose:
     - ".gitignore"
     - "Gemfile"
     - "package.json"
-    - "package_lock.json"
+    - "package-lock.json"
     - "postcss.config.js"
     - "tailwind.config.js"
   metadata:
