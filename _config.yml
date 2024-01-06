@@ -98,6 +98,12 @@ prose:
           label: "Tickets URL"
           help: "A website to get tickets (optional)"
           element: "text"
+      - name: "duration"
+        field:
+          label: "Duration"
+          help: "Duration of the performance"
+          element: "text"
+          placeholder: "1h 30m"
       - name: "hide"
         field:
           label: "Hide on 'Productions' tab"

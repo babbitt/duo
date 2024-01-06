@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Rent DMAC"
 ---
 
 # Rentals
