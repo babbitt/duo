@@ -36,14 +36,14 @@ published: true
 			<div class="group">
 				{% assign related_work = site.work | where: 'title', page.production | first %}
 				<div class="hidden pointer-events-none lg:block">
-					<div class="w-32 h-32 border-black border-2 duration-500 transition-all bg-black group-hover:bg-[{{related_work.primary_color | default: "#000000"}}] rounded-b-full absolute bottom-0 -left-36 opacity-30">
+					<div class="w-32 h-32 border-black dark:border-white border-2 duration-500 transition-all bg-black dark:bg-white {% if related_work %}group-hover:bg-[{{related_work.primary_color | default: "#000000"}}]{% endif %} rounded-b-full absolute bottom-0 -left-36 opacity-30">
 					</div>
-					<div class="w-32 h-32 border-black border-2 duration-500 transition-all bg-black group-hover:bg-[{{related_work.secondary_color | default: "#FFFFFF"}}] rounded-full absolute bottom-0 -left-72 opacity-30">
+					<div class="w-32 h-32 border-black dark:border-white border-2 duration-500 transition-all bg-black dark:bg-white {% if related_work %}group-hover:bg-[{{related_work.secondary_color | default: "#FFFFFF"}}]{% endif %} rounded-full absolute bottom-0 -left-72 opacity-30">
 					</div>
 				</div>
-				<p class="text-2xl font-bold w-fit min-w-full lg:min-w-0 transition-all ml-auto mr-0 duration-500 group-hover:min-w-[100%] text-center">{{page.current_status}}</p>
-				<a href="{% if related_work.url %}{{site.baseurl}}{{related_work.url}}{% endif %}">
-				<div class="border-black border-2 lg:rounded-l-[100%] transition-all bg-cover bg-center duration-500 lg:group-hover:rounded-md bg-[#B2B2B2] aspect-[4/6] w-80"
+				{% if related_work %}<p class="text-2xl font-bold w-fit min-w-full lg:min-w-0 transition-all ml-auto mr-0 duration-500 group-hover:min-w-[100%] text-center">{{page.current_status}}</p>{% endif %}
+				{% if related_work.url %}<a href="{{site.baseurl}}{{related_work.url}}">{% endif %}
+				<div class="{% if related_work %}border-black dark:border-white border-2 {% else %}hidden lg:block{% endif %} lg:rounded-l-[100%] transition-all bg-cover bg-center duration-500 {% if related_work %}lg:group-hover:rounded-md{% endif %} bg-[#B2B2B2] dark:bg-[#5D5D5D] aspect-[4/6] w-80"
 					style="background-image: url('{{site.baseurl}}{{related_work.image}}')">
 				</div>
 				</a>

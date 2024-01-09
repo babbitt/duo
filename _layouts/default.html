@@ -2,63 +2,106 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ page.title | default: site.title }}</title>
 
-		<!-- Include Tailwind CSS -->
-		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-		<!-- Add additional head elements or scripts as needed -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-		{% seo %}
-	</head>
-	<body class="font-sans leading-normal">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ page.title | default: site.title }}</title>
 
-		<!-- Navigation -->
-		<nav class="">
-			<div class="container flex mx-auto border-b-2 border-black">
-				<a href="{{ site.baseurl }}/" class="mt-2">
-					<div class="flex flex-col text-4xl leading-none text-white bg-black font-logo w-min">
-						<p>DUO</p>
-						<p>MAC</p>
-					</div>
+	<!-- Include Tailwind CSS -->
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+	<!-- Add additional head elements or scripts as needed -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	{% seo %}
+</head>
+
+<body class="font-sans leading-normal dark:bg-neutral-900 dark:text-white">
+
+	<!-- Navigation -->
+	<nav class="">
+		<div class="container flex mx-auto border-b-2 border-black dark:border-white">
+			<a href="{{ site.baseurl }}/" class="mt-2">
+				<div
+					class="flex flex-col text-4xl leading-none text-white bg-black dark:bg-white dark:text-black font-logo w-min">
+					<p>DUO</p>
+					<p>MAC</p>
+				</div>
+			</a>
+
+			<div
+				class="flex relative *:mt-auto mb-0 text-xl space-x-4 ml-auto mr-4 hover:*:border-black *:border-black/0 dark:hover:*:border-white dark:*:border-white/0 *:border-b-4 *:transition-border *:duration-150">
+				<a href="{{site.baseurl}}/history">
+					<p>History</p>
 				</a>
-
-				<div class="flex mt-auto mb-0 text-xl space-x-4 ml-auto mr-4 hover:*:border-black *:border-b-4 *:transition-border *:duration-150 *:border-black/0">
-					<a href="{{site.baseurl}}/history">
-						<p>History</p>
-					</a>
-					<a href="{{site.baseurl}}/works">
-						<p>Productions</p>
-					</a>
-					<a href="{{site.baseurl}}/rent">
-						<p>Rentals</p>
-					</a>
-				</div>
-
-
+				<a href="{{site.baseurl}}/works">
+					<p>Productions</p>
+				</a>
+				<a href="{{site.baseurl}}/rent">
+					<p>Rentals</p>
+				</a>
+				<a href="#" class="!mt-2 right-2 absolute !border-0 mb-auto group mode_selector">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						onclick="setTheme('light')" stroke="currentColor"
+						class="w-6 h-6 my-auto transition-all group-[.light-mode]:group-hover:h-0 group-[.dark-mode]:group-hover:h-6 group-[.dark-mode]:h-0 overflow-none">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						onclick="setTheme('dark')" stroke="currentColor"
+						class="w-6 h-6 my-auto transition-all group-[.dark-mode]:group-hover:h-0 group-[.light-mode]:group-hover:h-6 group-[.light-mode]:h-0">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+					</svg>
+				</a>
 			</div>
-		</nav>
 
-		<!-- Content -->
-		<div class="container mx-auto"> 
-			{{ content }}
+
 		</div>
+	</nav>
 
-		<div class="inline-block w-full mx-auto mt-10">
-			<hr class="border-black b-1 opacity-40">
-			<div class="absolute flex mt-2 space-x-2 right-4">
-				<p class="my-auto">-<p> <a target="_blank" href="http://joebabbitt.com"><img alt="Joe" src="https://joebabbitt.com/assets/img/logo.svg" style="max-width: 2rem;" class="w-4 h-4"></a> 
-			</div>
-			<div class="">
-				<div>
-					&#169;{{ site.time | date: '%Y' }}
-				</div>
+	<!-- Content -->
+	<div class="container mx-auto">
+		{{ content }}
+	</div>
+
+	<div class="inline-block w-full mx-auto mt-10">
+		<hr class="border-black dark:border-white b-1 opacity-40">
+		<div class="absolute flex mt-2 space-x-2 right-4">
+			<p class="my-auto">-
+			<p> <a target="_blank" href="http://joebabbitt.com"><img alt="Joe"
+						src="https://joebabbitt.com/assets/img/logo.svg" style="max-width: 2rem;" class="w-4 h-4"></a>
+		</div>
+		<div class="">
+			<div>
+				&#169;{{ site.time | date: '%Y' }}
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+<script>
+	const loadTheme = () => {
+		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.documentElement.classList.add('dark')
+			document.querySelector('.mode_selector').classList.add('dark-mode')
+			document.querySelector('.mode_selector').classList.remove('light-mode')
+		} else {
+			document.documentElement.classList.remove('dark')
+			document.querySelector('.mode_selector').classList.add('light-mode')
+			document.querySelector('.mode_selector').classList.remove('dark-mode')
+		}
+	}
+
+	const setTheme = (theme) => {
+		localStorage.theme = theme
+		loadTheme()
+	}
+
+	loadTheme()
+
+</script>
+
 </html>
-

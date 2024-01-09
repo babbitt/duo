@@ -47,6 +47,11 @@ ol {
     border-radius: 3px;
 }
 
+.dark .story a {
+    background-color: #525252;
+    color: white;
+}
+
 .story img[src*='#left'],img[src*='#right'],img[src*='#center'] {
     max-width: 80vw;
     max-height: 50vh;
@@ -120,6 +125,10 @@ ol {
 .story hr {
     margin: 1rem 0;
     border: black solid 5px;
+}
+
+.dark .story hr {
+    border: white solid 5px;
 }
 
 .story p {
