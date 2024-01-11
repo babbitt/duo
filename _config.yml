@@ -9,7 +9,7 @@ collections:
     output: true
 prose:
   siteurl: 'http://joebabbitt.com/duo'
-  media: 'static/media'
+  media: 'assets/uploaded'
   ignore:
     - "works.html"
     - "_config.yml"
