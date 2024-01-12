@@ -1,6 +1,6 @@
 title: "Duo Multicultural Arts Center"
 tagline: "DMAC is a multicultural arts center for independent artists in the heart of the East Village."
-baseurl: /duo
+baseurl: /duo/
 plugins:
   - jekyll-postcss-v2
   - jekyll-seo-tag
@@ -8,7 +8,7 @@ collections:
   work:
     output: true
 prose:
-  siteurl: 'http://joebabbitt.com/duo'
+  siteurl: 'http://joebabbitt.com/duo/'
   media: 'assets/uploaded'
   ignore:
     - "works.html"

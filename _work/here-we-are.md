@@ -41,9 +41,9 @@ The understudies for Here We Are are Bradley Dean, Adam Harrington, Bligh Voth, 
 \
 The musical features a book by Tony Award nominee David Ives, music and lyrics by Stephen Sondheim, and is inspired by two films, The Discreet Charm of the Bourgeoisie and The Exterminating Angel, by Luis Buñuel.
 
-![Actors]({{site.baseurl}}//assets/img/hwa_img.jpg)
-![Actors]({{site.baseurl}}//assets/img/hwa_img.jpg)
-![Actors]({{site.baseurl}}//assets/img/hwa_img.jpg)
+![Actors]({{site.baseurl}}/assets/img/hwa_img.jpg)
+![Actors]({{site.baseurl}}/assets/img/hwa_img.jpg)
+![Actors]({{site.baseurl}}/assets/img/hwa_img.jpg)
 
 Here We Are will include choreography by Sam Pinkleton, set design and costume design by David Zinn, lighting design by Natasha Katz, sound design by Tom Gibbons, orchestrations by Jonathan Tunick, music supervision and additional arrangements by Alexander Gemignani, hair design by Robert Pickens & Katie Gell, and casting by The Telsey Office.
 
