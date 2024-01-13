@@ -10,6 +10,8 @@ published: true
 primary_color: '#000000'
 secondary_color: '#ffffff'
 hide: false
+site: ''
+duration: ''
 ---
 After the loss of her family home to creditors, Blanche DuBois travels from Laurel, Mississippi, to the New Orleans French Quarter to live with her younger married sister, Stella, and Stella's husband, Stanley Kowalski. She is in her thirties and, with no money, has nowhere else to go.
 
@@ -21,4 +23,4 @@ Stanley later questions Blanche about her earlier marriage. Blanche had married 
 
 The night after Blanche's arrival, during one of Stanley's poker games, Blanche meets Mitch, one of Stanley's poker player buddies. His courteous manner sets him apart from the other men. Their chat becomes flirtatious and friendly, and Blanche easily charms him; they like each other. Suddenly becoming upset over multiple interruptions, Stanley explodes in a drunken rage and strikes Stella. Blanche and Stella take refuge with upstairs neighbor, Eunice Hubbell. When Stanley recovers, he cries out from the courtyard below for Stella to come back by repeatedly calling her name until she comes down and allows herself to be carried off to bed. Blanche is shocked to see that her sister has returned to her husband right after he assaulted her. After Stella returns to Stanley, Blanche and Mitch sit at the bottom of the steps in the courtyard, where Mitch apologizes for Stanley's coarse behavior.
 
-The next morning, Blanche rushes to Stella and describes Stanley as subhuman, though Stella assures Blanche that she and Stanley are fine. Stanley overhears the conversation but keeps silent. When Stanley comes in, Stella hugs and kisses him, letting Blanche know that her low opinion of Stanley does not matter.
+The next morning, Blanche rushes to Stella and describes Stanley as subhuman, though Stella assures Blanche that she and Stanley are fine. Stanley overhears the conversation but keeps silent. When Stanley comes in, Stella hugs and kisses him, letting Blanche know that her low opinion of Stanley does not matter..
