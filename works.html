@@ -7,9 +7,9 @@ title: "Productions"
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 	{% assign sorted_work = site.work | where_exp: 'work', 'work.hide != true' | sort: 'opening_night' | reverse %}
 	{% for work in sorted_work %}
-	<a href="{{site.baseurl}}{{work.url}}"><div class="bg-gray-100 rounded-md dark:bg-neutral-700 group">
+	<a href="{{work.url | relative_url}}"><div class="bg-gray-100 rounded-md dark:bg-neutral-700 group">
 			<div class="w-full aspect-[4/6] bg-cover bg-center dark:bg-neutral-600 bg-gray-200 rounded-md"
-				style="background-image: url('{{site.baseurl}}{{work.image}}')"></div>
+				style="background-image: url('{{work.image | relative_url}}')"></div>
 			<div class="relative">
 				<div class="p-2">
 					<h2 class="mb-2 text-lg font-semibold">{{ work.title }}</h2>

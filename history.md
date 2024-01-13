@@ -3,7 +3,7 @@ layout: post
 title: "History"
 ---
 
-![Ghostly Theatre]({{site.baseurl}}assets/img/history/Ghostly-Theatre.jpg#center)
+![Ghostly Theatre]({{site.baseurl}}/assets/img/history/Ghostly-Theatre.jpg#center)
 
 
 As soon as Michelangelo Alasa heard that the theater on the second floor of 62 East 4th Street was up for rent, he grabbed a crowbar and moved toward the stairs. He swung open wooden doors on his way; his feet hit cracked, uneven white tile that on other occasions he’d stopped to admire. He made it to the stairs and began a slow, certain descent to the next floor. The marble stairway walls had been painted over since before his time, a murky indefinite color offensive mainly due to what it covered. It was 1996, and the time had come to liberate the remnants of the storied century-old theater and reclaim its striking heritage.
@@ -18,7 +18,7 @@ But this was where it had happened. The significance overwhelmed him. Hadn’t E
 
 Now this place was littered with old theatrical sets, costumes and upholstered chairs affixed to rotting floors. In the back there sat a grimy couch. Alasa couldn’t see clearly with his flashlight, and the light switches were useless. He ran back upstairs and strung together a set of extension cords from his office, running them down the painted-over marble stairs and through the tall doors to hook up as many lights as he could find.
 
-![Mural]({{site.baseurl}}assets/img/history/Mural1.jpg#right)
+![Mural]({{site.baseurl}}/assets/img/history/Mural1.jpg#right)
 
 The effect was incredible: Now you could see it! Francis Coppola shooting The Godfather II, Chevy Chase running around the theater with Laraine Newman, Divine practicing for Women Behind Bars, minor Manhattan socialites toasting at their wedding receptions, the formation and meetings of the Musical Mutual Protective Union, J. I. Rodale running play after play after play off-Broadway.
 
@@ -28,7 +28,7 @@ Alasa was hungry for a larger canvas. Expanding downstairs was the logical next 
 
 The room that eventually became a theater was built in 1889, when a German immigrant named Victor Eckstein bought the lot next door to his house at 64 East 4th Street. He had been renting out his own house for meetings, which he found a lucrative enough endeavor to want to expand. Like Alasa a century later, Eckstein wanted more room. He hired Max Schroff to design a new building on the property, and on May 29, 1889, work began on 62 East 4th Street. Eckstein spent $35,000 on construction. Schroff used hand-burned brick, blue stone-covered walls, spruce floor beams and yellow pine girders. The floor and ceiling were arched with brick, and the roof laid flat with tin. It took a day under seven months to finish, and in less than a fortnight, the five-story meetinghouse was up and running.
 
-![Ceiling]({{site.baseurl}}assets/img/history/Chandelier-Canopy.jpg#left)
+![Ceiling]({{site.baseurl}}/assets/img/history/Chandelier-Canopy.jpg#left)
 
 Eckstein called it the Metropolitan Assembly Rooms, and layered each floor according to its purpose. The basement was a restaurant, which served a dining room on the first floor. The second and third stories were meeting rooms. Eckstein, whose youngest daughter Bertha was born in the same year his building went up, moved into the top two floors with his family of seven. Almost everyone called it Eckstein’s Metropolitan Assembly Rooms, and it quickly became a favorite rallying point for labor unions, volunteer organizations, anarchists, musicians and Army posts.
 

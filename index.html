@@ -42,9 +42,9 @@ published: true
 					</div>
 				</div>
 				{% if related_work %}<p class="text-2xl font-bold w-fit min-w-full lg:min-w-0 transition-all ml-auto mr-0 duration-500 group-hover:min-w-[100%] text-center">{{page.current_status}}</p>{% endif %}
-				{% if related_work.url %}<a href="{{site.baseurl}}{{related_work.url}}">{% endif %}
+				{% if related_work.url %}<a href="{{ related_work.url | relative_url }}">{% endif %}
 				<div class="{% if related_work %}border-black dark:border-white border-2 {% else %}hidden lg:block{% endif %} lg:rounded-l-[100%] transition-all bg-cover bg-center duration-500 {% if related_work %}lg:group-hover:rounded-md{% endif %} bg-[#B2B2B2] dark:bg-[#5D5D5D] aspect-[4/6] w-80"
-					style="background-image: url('{{site.baseurl}}{{related_work.image}}')">
+					style="background-image: url('{{related_work.image | relative_url}}')">
 				</div>
 				</a>
 				<p class="text-2xl w-fit min-w-full lg:min-w-0 transition-all ml-auto mr-0 duration-500 group-hover:min-w-[100%] text-center max-w-80 text-ellipsis overflow-hidden whitespace-nowrap">{{related_work.title}}</p>
