@@ -61,13 +61,11 @@ prose:
       - name: "opening_night"
         field:
           label: "Opening Night"
-          element: "text"
-          help: "Enter date in YYYY-MM-DD format"
+          element: "date"
       - name: "closing_night"
         field:
           label: "Closing Night"
-          element: "text"
-          help: "Enter date in YYYY-MM-DD format"
+          element: "date"
       - name: "production_company"
         field:
           label: "Production Company"
@@ -94,12 +92,12 @@ prose:
         field:
           label: "Website URL"
           help: "A website to learn more (optional)"
-          element: "text"
+          element: "url"
       - name: "tickets"
         field:
           label: "Tickets URL"
           help: "A website to get tickets (optional)"
-          element: "text"
+          element: "url"
       - name: "duration"
         field:
           label: "Duration"
@@ -110,4 +108,4 @@ prose:
         field:
           label: "Hide on 'Productions' tab"
           element: "checkbox"
-          size: "small"
+          size: "large"
