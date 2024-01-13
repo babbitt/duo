@@ -1,13 +1,16 @@
 ---
 layout: work
-title: "A Streetcar Named Desire"
-opening_night: "2024-01-15"
-closing_night: "2024-02-15"
-production_company: "DMAC"
-image: "/assets/img/desire_bad.webp"
-tickets: "https://www.show-score.com/off-broadway-shows/a-streetcar-named-desire"
+title: A Streetcar Named Desire
+opening_night: '2024-01-15'
+closing_night: '2024-02-15'
+production_company: DMAC
+image: /assets/img/desire_bad.webp
+tickets: 'https://www.show-score.com/off-broadway-shows/a-streetcar-named-desire'
+published: true
+primary_color: '#000000'
+secondary_color: '#ffffff'
+hide: false
 ---
-
 After the loss of her family home to creditors, Blanche DuBois travels from Laurel, Mississippi, to the New Orleans French Quarter to live with her younger married sister, Stella, and Stella's husband, Stanley Kowalski. She is in her thirties and, with no money, has nowhere else to go.
 
 Blanche tells Stella that she has taken a leave of absence from her English-teaching position because of her nerves (which is later revealed to be a lie). Blanche laments the shabbiness of her sister's two-room flat. She finds Stanley loud and rough, eventually referring to him as "common". Stanley, in return, is suspicious of Blanche, does not care for her manners and resents her presence which is already interfering with his regimented but hedonistic lifestyle.
