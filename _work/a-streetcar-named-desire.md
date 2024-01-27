@@ -6,10 +6,10 @@ closing_night: '2024-02-15'
 production_company: DMAC
 image: /assets/img/desire_bad.webp
 tickets: 'https://www.show-score.com/off-broadway-shows/a-streetcar-named-desire'
-published: true
 primary_color: '#000000'
 secondary_color: '#ffffff'
 hide: false
+published: ''
 ---
 After the loss of her family home to creditors, Blanche DuBois travels from Laurel, Mississippi, to the New Orleans French Quarter to live with her younger married sister, Stella, and Stella's husband, Stanley Kowalski. She is in her thirties and, with no money, has nowhere else to go.
 
